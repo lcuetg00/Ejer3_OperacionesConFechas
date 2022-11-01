@@ -18,10 +18,10 @@ public class Main {
             System.out.println("Formato para las fechas: YYYY-MM-DD");
             System.out.println("Inserte la primera fecha");
             fecha1 = scanner.next();
+            LocalDate primeraFecha = LocalDate.parse(fecha1);
+
             System.out.println("Inserte la segunda fecha");
             fecha2 = scanner.next();
-
-            LocalDate primeraFecha = LocalDate.parse(fecha1);
             LocalDate segundaFecha = LocalDate.parse(fecha2);
 
             //Diferencia de días entre las 2 fechas
